@@ -18,7 +18,7 @@ html {
   font-size: 15px;
 }
 body {
-    overflow: hidden;
+  overflow: hidden;
 }
 
 .container {
@@ -74,8 +74,7 @@ body {
   margin: 2rem;
 }
 
-
-/* buttons styling */ 
+/* buttons styling */
 .ratings-btns {
   display: flex;
   justify-content: space-between;
@@ -90,7 +89,7 @@ body {
   background-color: var(--dark-blue-a);
 }
 .active {
-    background-color: var(--medium-grey);
+  background-color: var(--medium-grey);
 }
 
 .btn:hover {
@@ -124,8 +123,6 @@ body {
 }
 
 /* thank you page styling */
-
-
 
 .thank-you-title {
   color: #fff;
