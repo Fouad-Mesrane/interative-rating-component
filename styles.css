@@ -1,105 +1,143 @@
-  @import url('https://fonts.googleapis.com/css2?family=Overpass:wght@400;700&display=swap');
-
-
-
+@import url("https://fonts.googleapis.com/css2?family=Overpass:wght@400;700&display=swap");
 
 :root {
-    --very-dark-blue : hsl(216, 12%, 8%);
-    --dark-blue : hsl(213, 19%, 18%);
-    --dark-blue-a : hsla(213, 19%, 18%, 50%);
-    --primary-orange : hsl(25, 97%, 53%);
-    --light-grey : hsl(217, 12%, 63%);
-    --medium-grey : hsl(216, 12%, 54%);
-
+  --very-dark-blue: hsl(216, 12%, 8%);
+  --dark-blue: hsl(213, 19%, 18%);
+  --dark-blue-a: hsla(213, 14%, 67%, 0.15);
+  --primary-orange: hsl(25, 97%, 53%);
+  --light-grey: hsl(217, 12%, 63%);
+  --medium-grey: hsl(216, 12%, 54%);
 }
 
-*{
-    box-sizing: border-box;
-    margin: 0;
+* {
+  box-sizing: border-box;
+  margin: 0;
 }
 
 html {
-    font-size: 15px;
+  font-size: 15px;
+}
+body {
+    overflow: hidden;
 }
 
 .container {
-    width: 100%;
-    height: 100vh;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    background-color: var(--very-dark-blue);
-    font-family: 'Overpass', sans-serif;
+  width: 100%;
+  height: 100vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background-color: var(--very-dark-blue);
+  font-family: "Overpass", sans-serif;
 }
 
-
-.card{
-    max-width: 400px;
-    background-color: var(--dark-blue);
-    border-radius: 20px;
-    padding: 2rem;
+.thank-you-container {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+}
+.card {
+  max-width: 400px;
+  background-color: var(--dark-blue);
+  border-radius: 20px;
+  padding: 2rem;
 }
 .title {
-    color: hsl(0,0%,100%);
-    padding: 1rem 0;
-    margin: 0 auto 0.5rem;
-}
-.text {
-    color: var(--light-grey);
-    max-width: 360px;
-    margin-bottom: 2rem;
-    line-height: 1.7em;
-}
-.img-icon {
-    width: 2rem;
-    
-    padding: 6px;
-    border-radius: 50%;
-    background-color: var(--medium-grey)
+  color: hsl(0, 0%, 100%);
+  padding: 1rem 0;
+  margin: 0 auto 0.5rem;
 }
 
+.text {
+  color: var(--light-grey);
+  max-width: 360px;
+  margin-bottom: 2rem;
+  line-height: 1.7em;
+}
+.thank-you-text {
+  color: var(--light-grey);
+  text-align: center;
+  margin: 1rem;
+}
+
+/* images styling */
+.img-icon {
+  width: 3rem;
+  height: 3rem;
+  padding: 0.9rem;
+  border-radius: 50%;
+  background-color: var(--dark-blue-a);
+}
+.thank-you-img {
+  width: 50%;
+  margin: 2rem;
+}
+
+
+/* buttons styling */ 
 .ratings-btns {
-    display: flex;
-    justify-content: space-between
-    
+  display: flex;
+  justify-content: space-between;
 }
 .btn {
-    width: 3rem;
-    height: 3rem;
-    border-radius: 50%;
-    cursor: pointer;
-    border: none;
-    color: white;
+  width: 3rem;
+  height: 3rem;
+  border-radius: 50%;
+  cursor: pointer;
+  border: none;
+  color: white;
+  background-color: var(--dark-blue-a);
+}
+.active {
     background-color: var(--medium-grey);
 }
 
 .btn:hover {
-    background-color: var(--primary-orange);
-   
+  background-color: var(--primary-orange);
 }
 .submit-btn-container {
-    display: flex;
-    justify-content: center;
-    margin-top: 2rem;
+  display: flex;
+  justify-content: center;
+  margin-top: 2rem;
 }
-#submit-btn{
-width: 100%;
-padding: .8rem;
-color: white;
-border: none;
-background-color: var(--primary-orange);
-font-size: large;
-text-transform: uppercase;
-letter-spacing: 2px;
-font-weight: 700;
-border-radius: 20px;
-cursor: pointer;
+#submit-btn {
+  width: 100%;
+  padding: 0.8rem;
+  color: white;
+  border: none;
+  background-color: var(--primary-orange);
+  font-size: large;
+  text-transform: uppercase;
+  letter-spacing: 2px;
+  font-weight: 700;
+  border-radius: 20px;
+  cursor: pointer;
 }
 #submit-btn:hover {
-    background-color: white;
-    color: var(--primary-orange);
+  background-color: white;
+  color: var(--primary-orange);
 }
 
 .hidden {
-    display: none;
+  display: none;
+}
+
+/* thank you page styling */
+
+
+
+.thank-you-title {
+  color: #fff;
+  margin: 1rem;
+  font-size: 1.8rem;
+}
+.selection-content {
+  background-color: var(--dark-blue-a);
+  border-radius: 20px;
+  padding: 0.2rem;
+}
+.selected {
+  color: var(--primary-orange);
+  margin: 0.5rem;
 }

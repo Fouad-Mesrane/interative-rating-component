@@ -30,7 +30,7 @@
 
     <div class="container">
       <div class="card">
-        <div class="">
+        <div class="rating-content">
           <div class="img-star">
             <img
               class="img-icon"
@@ -46,7 +46,7 @@
           </p>
 
           <div class="ratings-btns">
-            <button type="button" class="btn btn-1">1</button>
+            <button type="button" class="btn btn-1 active">1</button>
             <button type="button" class="btn btn-2">2</button>
             <button type="button" class="btn btn-3">3</button>
             <button type="button" class="btn btn-4">4</button>
@@ -56,26 +56,33 @@
             <button type="submit" id="submit-btn">Submit</button>
           </div>
         </div>
+        <div class="thank-you-container hidden">
+          <img
+            class="thank-you-img"
+            src="./images/illustration-thank-you.svg"
+            alt="thank-you icin"
+          />
+          <div class="selection-content ">
+            <h4 class="selected">You selected <span class="selected-btn">1</span> out of 5</h4>
+          </div>
+
+          <h1 class="thank-you-title">Thank you!</h1>
+          <p class="thank-you-text">
+            We appreciate you taking the time to give a rating. If you ever need
+            more support, don’t hesitate to get in touch!
+          </p>
+        </div>
       </div>
     </div>
 
-    <!-- Rating state end -->
+   
 
-    <!-- Thank you state start -->
-
-    <!-- You selected -->
-    <!-- Add rating here -->
-    <!-- out of 5 Thank you! We appreciate you taking the time to give a rating. If
-    you ever need more support, don’t hesitate to get in touch! -->
-
-    <!-- Thank you state end -->
-
-    <!-- <div class="attribution">
+    <div class="attribution">
       Challenge by
       <a href="https://www.frontendmentor.io?ref=challenge" target="_blank"
         >Frontend Mentor</a
-      >. Coded by <a href="#">Your Name Here</a>.
-    </div> -->
+      >. Coded by <a href="#">Fouad Mesrane</a>.
+    </div>
 
     <script src="./index.js"></script>
   </body>
